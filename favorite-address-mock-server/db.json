@@ -1,0 +1,87 @@
+{
+  "public-addresses": [
+    {
+      "id": 1,
+      "name": "Home",
+      "address": "No. 101, North Kargar St., Tehran",
+      "latitude": 35.720179,
+      "longitude": 51.389634
+    },
+    {
+      "id": 2,
+      "name": "Work",
+      "address": "No. 20, West Ferdows St., Tehran",
+      "latitude": 35.729139,
+      "longitude": 51.300281
+    },
+    {
+      "name": "Amir mohammad ",
+      "address": "fhfdh",
+      "longitude": "25.6",
+      "latitude": "25.36",
+      "id": 3
+    },
+    {
+      "name": "Amir Mohammad ",
+      "address": "xdgd",
+      "longitude": "89.33",
+      "latitude": "55.36",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "email": "amir@gmail.com",
+      "password": "$2a$10$Ij8wiAVVWvcPBc2j6Pr51uO2aQRoQnjd68SuwvxXFi/P6X8Exin.y",
+      "name": "Amir Haghighat",
+      "phoneNumber": "09359177210",
+      "id": 1
+    },
+    {
+      "email": "amirmhaghighat@gmail.com",
+      "password": "$2a$10$1nGOM72uP8BIe3RgR4.Mke/g3ff/IwUscgJmsno5gVjsCikKcEZwm",
+      "name": "Amir mohammad ",
+      "phoneNumber": "09359177210",
+      "id": 2
+    },
+    {
+      "email": "amh@gmail.com",
+      "password": "$2a$10$B.YUMNONaCJdG4MSC7DLL.kqXvHQmC/0Agjuzg5z/DuML3iV60Ziy",
+      "name": "Amir Mohammad ",
+      "phoneNumber": "09359177210",
+      "id": 3
+    },
+    {
+      "email": "amirmh@gmail.com",
+      "password": "$2a$10$MPwzyLdjHTp5N8iDFshZJOdPflMUD2Xzgn8KgCeECO3.tKzFE4sCK",
+      "name": "Amir Mohammad ",
+      "phoneNumber": "09359177210",
+      "id": 4
+    },
+    {
+      "email": "hasan@gmail.com",
+      "password": "$2a$10$W1/varHb7glRvJCrTi/egeMLtoRj2qaE7giLvr/dV0kvOcxnPlZ2e",
+      "name": "Hasan",
+      "phoneNumber": "09359177211",
+      "id": 5
+    }
+  ],
+  "favorite-addresses": [
+    {
+      "name": "Amir mohammad ",
+      "address": "gg",
+      "longitude": "25.66",
+      "latitude": "35.155",
+      "userId": 4,
+      "id": 1
+    },
+    {
+      "name": "hasan1",
+      "address": "fg",
+      "longitude": "55.66",
+      "latitude": "54.77",
+      "userId": 5,
+      "id": 2
+    }
+  ]
+}
