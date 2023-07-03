@@ -1,0 +1,36 @@
+<form class="flex flex-wrap items-center justify-center lg:mx-auto lg:w-3/12 lg:h-screen" #loginForm=ngForm>
+    <div
+        class="login-banner w-full h-[312px] flex justify-end lg:justify-end lg:items-center bg-cover bg-no-repeat bg-bottom bg-[url('/assets/images/login-bg.svg')]">
+        <img class="ml-4 h-2/3 lg:h-full mt-3 lg:mt-0" src="/assets/images/flower.svg">
+    </div>
+    <div class="w-full py-5 px-4">
+        <div class="w-full mb-8">
+            <mat-form-field class="w-full px-3">
+                <mat-label>Email</mat-label>
+                <input matInput type="text" [(ngModel)]="loginPostBody.email" name="email"
+                    class="border-b-violet-400 w-full border-t-0 border-l-0 border-r-0 pr-8" required #email="ngModel">
+            </mat-form-field>
+        </div>
+        <div class="w-full mb-8">
+            <mat-form-field class="w-full px-3">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" [(ngModel)]="loginPostBody.password" name="password"
+                    class="border-b-violet-400 w-full border-t-0 border-l-0 border-r-0 pr-8" required
+                    #password="ngModel">
+            </mat-form-field>
+        </div>
+
+        <div class="flex flex-wrap justify-center w-full mt-9">
+            <a [routerLink]="'/auth/register'"
+                class="w-full text-sky-600 underline underline-offset-4 text-center mb-8">
+                Don't you have
+                an account?
+            </a>
+            <button mat-raised-button color="primary" (click)="onFormSubmit(loginForm)"
+                class="hover:bg-primary-400 transition-all w-8/12 text-white font-bold py-1 rounded-2xl mx-auto"
+                [disabled]="isLoading">
+                {{getSubmitBtnText}}
+            </button>
+        </div>
+    </div>
+</form>

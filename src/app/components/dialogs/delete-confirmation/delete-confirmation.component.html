@@ -1,0 +1,10 @@
+<div class="px-6 py-4">
+    <h1 mat-dialog-title>{{data.title}}</h1>
+    <div mat-dialog-content>
+        <p>{{data.text}}</p>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button color="warn" (click)="closeDialog()">Close</button>
+        <button mat-button cdkFocusInitial color="primary" class="mx-3" (click)="deletePublicAddress()">Ok</button>
+    </div>
+</div>

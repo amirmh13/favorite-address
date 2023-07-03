@@ -1,0 +1,37 @@
+<section class="flex flex-wrap justify-center w-fullpy-6">
+    <mat-card class="bg-white mx-auto w-1/2 p-6">
+        <mat-card-header class="mb-6 py-0">
+            <mat-card-title class="flex items-center justify-center font-bold">
+                <mat-icon [routerLink]="'/public-address/list'" class="cursor-pointer">arrow_back</mat-icon>
+                <span class="mx-2">Profile</span>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="m">
+            <div class="mb-5">
+                <span class="text-lg font-medium">Email:</span>
+                <span class="mx-3">{{userInfo.email}}</span>
+            </div>
+
+            <form #profileForm="ngForm" (ngSubmit)="updateUserInfo(profileForm)">
+                <mat-form-field class="w-full">
+                    <mat-label>Name</mat-label>
+                    <input matInput type="text" [(ngModel)]="userInfo.name" name="name"
+                        class="border-b-violet-400 w-full border-t-0 border-l-0 border-r-0 pr-8" required
+                        #name="ngModel">
+                </mat-form-field>
+                <mat-form-field class="w-full">
+                    <mat-label>Phone number</mat-label>
+                    <input matInput type="text" [(ngModel)]="userInfo.phoneNumber" name="phoneNumber"
+                        class="border-b-violet-400 w-full border-t-0 border-l-0 border-r-0 pr-8" required
+                        #phoneNumber="ngModel">
+                </mat-form-field>
+
+                <div class="text-center">
+                    <button mat-raised-button color="primary" class="w-3/12 text-white py-1">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</section>

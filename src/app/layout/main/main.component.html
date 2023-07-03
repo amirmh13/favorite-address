@@ -1,0 +1,44 @@
+<div>
+    <mat-toolbar color="primary">
+        <div class="flex justify-between items-center w-full">
+
+            <span>Geoloc</span>
+
+            <div *ngIf="!isUserLoggedIn;else loggedInActions">
+                <button mat-button [routerLink]="'/auth/login'">
+                    Login
+                </button>
+                <button mat-button [routerLink]="'/auth/register'">
+                    Register
+                </button>
+            </div>
+
+            <ng-template #loggedInActions>
+                <button mat-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    {{userInfo.name}}
+                    <mat-icon>person</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item [routerLink]="'/user/profile'">
+                        <mat-icon>person</mat-icon>
+                        <span>Profile</span>
+                    </button>
+                    <button mat-menu-item [routerLink]="'/favorite-address/list'">
+                        <mat-icon>location_on</mat-icon>
+                        <span>Favorite addresses</span>
+                    </button>
+                    <button mat-menu-item color="warn" (click)="logout()">
+                        <mat-icon color="warn">logout</mat-icon>
+                        <span color="warn">Logout</span>
+                    </button>
+                </mat-menu>
+            </ng-template>
+        </div>
+
+
+    </mat-toolbar>
+
+    <section class="py-6 px-6">
+        <router-outlet></router-outlet>
+    </section>
+</div>

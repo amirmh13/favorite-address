@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.success-swal {
+  @apply bg-green-600;
+}
+
+.error-swal {
+  @apply bg-red-700;
+}
+
+.mat-mdc-snack-bar-container .mdc-snackbar__surface {
+  background-color: unset !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
